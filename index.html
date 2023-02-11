@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="score-card">
+      <span>Score: </span>
+      <span class="score-card__score">0</span>
+    </div>
+    <div class="game-over-container">
+      <div class="game-over">
+        <span>Game over</span>
+        <span>Score: <span class="game-over__score"></span></span>
+        <span>Shots Fired: <span class="shots-fired__score"></span></span>
+        <span>Accuracy: <span class="accuracy__score"></span></span>
+        <button class="restart-button">Restart</button>
+      </div>
+    </div>
+    <div class="instruction-container">
+      <div class="instruction">
+        <img src="./wasd.png" alt="" />
+        <span>to move</span>
+        <img src="./mouseleft.svg" alt="" />
+        <span>to shoot</span>
+        <button class="start-button">Start Game</button>
+      </div>
+    </div>
+    <canvas></canvas>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
